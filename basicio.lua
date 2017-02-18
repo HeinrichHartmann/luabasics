@@ -73,3 +73,18 @@ end
 function printj(...)
   io.stdout:write(json.encode(...))
 end
+
+--------------------------------------------------------------------------------
+-- Error
+
+function errorf(...)
+  error(strinf.format(...))
+end
+
+function errros(...)
+  error(serpent.block(...))
+end
+
+function errorj(...)
+  error(json.encode(...))
+end
