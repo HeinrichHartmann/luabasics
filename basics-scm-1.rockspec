@@ -1,11 +1,11 @@
 package = "basics"
 version = "scm-1"
 source = {
-   url = "*** please add URL for source tarball, zip or repository here ***"
+   url = "git+https://github.com/HeinrichHartmann/luabasics"
 }
 description = {
-   homepage = "*** please enter a project homepage ***",
-   license = "*** please specify a license ***"
+   homepage = "https://github.com/HeinrichHartmann/luabasics",
+   license = "MIT"
 }
 dependencies = {
    "lua ~> 5.1"
