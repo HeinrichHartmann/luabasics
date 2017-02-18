@@ -5,11 +5,14 @@ local serpent = require "serpent"
 -- Calling
 
 function exec(cmd)
-  log("exec: " ..  cmd)
   local handle = io.popen(cmd)
   local result = handle:read("*a")
   handle:close()
   return result
+end
+
+function execf(...)
+  return exec(string.format(...))
 end
 
 --------------------------------------------------------------------------------
