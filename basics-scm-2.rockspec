@@ -10,7 +10,7 @@ description = {
 dependencies = {
    "lua ~> 5.1",
    "lua-cjson >= 2.1.0-1",
-   "serpent" >= 0.28.1",
+   "serpent >= 0.28-1",
 }
 build = {
    type = "builtin",
