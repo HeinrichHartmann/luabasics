@@ -20,7 +20,7 @@ end
 
 function storestr(name, str)
   local fh = io.open(name, "w")
-  fh:write(std)
+  fh:write(str)
   fh:close()
 end
 
@@ -33,11 +33,13 @@ function loadstr(name)
 end
 
 function storej(name, o)
-  strestr(json.encode(o))
+  storestr(name, json.encode(o))
 end
 
 function loadj(name)
-  return json.decode(loadstr(name))
+  local str = loadstr(name)
+  if not str then return end
+  return json.decode(str)
 end
 
 --------------------------------------------------------------------------------
