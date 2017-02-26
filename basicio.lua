@@ -80,7 +80,7 @@ end
 -- Error
 
 function errorf(...)
-  error(strinf.format(...))
+  error(string.format(...))
 end
 
 function errros(...)
