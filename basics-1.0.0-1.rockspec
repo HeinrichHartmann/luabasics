@@ -1,7 +1,7 @@
 package = "basics"
-version = "scm-2"
+version = "1.0.0-1"
 source = {
-   url = "git+https://github.com/HeinrichHartmann/luabasics"
+   url = "https://github.com/HeinrichHartmann/luabasics"
 }
 description = {
    homepage = "https://github.com/HeinrichHartmann/luabasics",
